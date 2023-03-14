@@ -16,12 +16,12 @@ const Navbar = (props) => {
   return (
     <div className={s.containerRoot}>
       <div className={s.navContainer}>
-        <Link to="/home" className={s.logo}>
+        <Link to="/" className={s.logo}>
           <img src={logo} alt="" />
         </Link>
         <div className={s.buttonsContainer}>
           <Link
-            to="/home"
+            to="/"
             className={`${s.button} ${
               active === "first" ? `${s.activeButton}` : ""
             }`}
@@ -56,7 +56,7 @@ const Navbar = (props) => {
 
           <Dropdown.Menu className={s.dropdownMenu}>
             <Dropdown.Item tar className={s.dropdownItem}>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </Dropdown.Item>
             <Dropdown.Item className={s.dropdownItem}>
               {" "}
@@ -68,7 +68,7 @@ const Navbar = (props) => {
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Link to="/home" className={s.logMobile}>
+        <Link to="/" className={s.logMobile}>
           <img src={logo} alt="" />
         </Link>
         <div className={s.cartLoginContainer}>
