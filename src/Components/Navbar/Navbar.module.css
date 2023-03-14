@@ -1,0 +1,165 @@
+.containerRoot {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid #EDF2F4;
+    width: 100%;
+    /* padding: .5em 0em; */
+    /* color: black; */
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px !important;
+    width: 100%;
+    padding-right: .5em;
+}
+
+.logo {
+    display: none;
+
+}
+
+.logMobile {
+    width: 100%;
+    display: flex;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.cart,
+.login {
+    padding: .5em;
+    display: flex;
+    gap: .2em;
+    font-weight: 500;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.navvvvv {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.Dropdown {
+    border: none;
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+    max-width: 70px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: .9em;
+}
+
+.dropdownMenu {
+    padding: 0;
+}
+
+.dropdownItem {
+    border-bottom: 1px solid #EDF2F4 !important;
+}
+
+.dropdownItem>a {
+    color: black !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.buttonsContainer {
+    display: none;
+}
+
+.dropdownContainer {
+    display: flex;
+    align-items: center;
+    padding: .5em;
+}
+
+
+.button {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    /* min-width: 150px; */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.button:hover {
+    border-bottom: 2px solid #D90429;
+    color: black;
+    transition: 100ms;
+}
+
+.activeButton {
+    border-bottom: 2px solid #D90429;
+    color: black;
+    /* padding-bottom: .3em; */
+    transition: 100ms;
+}
+
+.cart>span,
+.login>span {
+    display: none;
+}
+
+.cartLoginContainer {
+    display: flex;
+    /* border: 1px solid gray; */
+    /* box-shadow: 0 3px 2px -2px gray; */
+    border-radius: 5px;
+}
+
+.cartIconMobile {
+    display: flex;
+    align-items: center;
+    gap: .2em;
+    color: black;
+}
+
+
+@media (min-width:800px) {
+    .buttonsContainer {
+        display: flex;
+        gap: 2em;
+        width: 100%;
+        max-width: 700px;
+        justify-content: center;
+        padding-left: .5em;
+    }
+
+    .dropdownContainer {
+        display: none;
+    }
+
+
+    .cart>span,
+    .login>span {
+        display: flex;
+        color: black;
+    }
+
+    .cartIconMobile>span {
+        display: none;
+    }
+
+
+    .logo {
+        width: 100%;
+        display: flex;
+        max-width: 100px;
+        justify-content: flex-start;
+    }
+
+    .logMobile {
+        display: none;
+    }
+}

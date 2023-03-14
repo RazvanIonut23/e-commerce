@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* align-items: center; */
+    gap: 2em;
+    padding: 0em 0em 2em 0em;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding-left: .5em;
+    font-weight: 500;
+    color: black;
+}
+
+.textC {
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+}

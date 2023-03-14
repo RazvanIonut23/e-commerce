@@ -1,0 +1,14 @@
+.carouselRoot {
+    display: flex;
+    justify-content: center;
+}
+
+.carouselContainer {
+    display: flex;
+}
+
+.carouselImg {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}

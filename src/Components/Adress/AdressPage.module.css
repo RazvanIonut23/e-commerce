@@ -1,0 +1,139 @@
+.orderRoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orderContainer {
+    width: 100%;
+    max-width: 1188px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+    background-color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 6px;
+}
+
+.dataRoot,
+.adressRoot {
+    padding: 1em;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.datesAndAdress {
+    width: 100%;
+}
+
+
+
+.headingtwo {
+    max-width: 1200px;
+    width: 100%;
+    padding-top: .5em;
+    padding-left: .5em;
+    text-align: left;
+}
+
+.saveButton {
+    border: 1px solid #D90429;
+    border-radius: 6px;
+    font-weight: 700;
+    padding: .5em;
+    color: #D90429;
+    background-color: white;
+    width: 100%;
+    max-width: 200px;
+    align-self: flex-end;
+}
+
+.dataRoot>input,
+.adressRoot>input {
+    border: 1px solid #EBF0FF;
+    border-radius: 6px;
+    padding: .5em;
+}
+
+.formContainer>p {
+    color: red;
+}
+
+.checkoutButton {
+    border-radius: 6px !important;
+    font-weight: 700 !important;
+    color: #D90429 !important;
+    background-color: white !important;
+    border: 1px solid #D90429 !important;
+    width: 100%;
+    max-width: 200px;
+}
+
+.checkoutButton:hover {
+    box-shadow: 1px 1px 1px #D90429 !important;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    /* min-width: 400px; */
+    border-radius: 6px;
+    width: 100%;
+}
+
+.buyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em;
+    max-width: 400px;
+    align-self: flex-end;
+    gap: 2em;
+    width: 100%;
+    font-weight: 500;
+}
+
+.buyDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    padding-bottom: 2em;
+    border-bottom: 1px solid lightgray;
+}
+
+.buyDetails>p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.finalTotalPA {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.passwordError {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media(min-width: 800px) {
+    .orderContainer {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .total {
+        max-width: 400px;
+    }
+}
